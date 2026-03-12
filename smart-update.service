@@ -1,0 +1,9 @@
+[Unit]
+Description=Smart automatic update
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/smart-update.sh
+
+[Install]
+WantedBy=multi-user.target
